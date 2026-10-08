@@ -6,8 +6,8 @@
 ---
 
 ## 🌟 লাইভ ডেমো ও লিংক (Live Links)
-- **Live Deployment:** [https://bazardor.vercel.app](https://bazardor.vercel.app) *(আপলোডকৃত লিংক এখানে যুক্ত করুন)*
-- **GitHub Repository:** [https://github.com/your-username/B14-A7-Bazar-Dor](https://github.com/your-username/B14-A7-Bazar-Dor)
+- **Live Deployment:** [https://bazardor.vercel.app](https://bazardor.vercel.app) *(Deploy on Vercel)*
+- **GitHub Repository:** [https://github.com/razzak-dev007/B14-A7-Bazar-Dor](https://github.com/razzak-dev007/B14-A7-Bazar-Dor)
 
 ---
 
@@ -47,6 +47,7 @@
 4. **🔒 সুরক্ষিত প্রোডাক্ট ডিটেইলস পেজ (Protected Product Details - `/product/[slug]`):**
    - শুধুমাত্র অথেনটিকেটেড ব্যবহারকারীদের জন্য অ্যাক্সেসযোগ্য রুট। অননুমোদিত প্রবেশে টোস্ট অ্যালার্ট ও সাইন-ইন রিডাইরেক্ট।
    - **মূল্য সংক্ষিপ্তসার:** সর্বনিম্ন দাম (Min), সর্বোচ্চ দাম (Max) এবং গড় দাম (Average) ক্যালকুলেশন।
+   - **মূল্য পরিবর্তনের ইতিহাস:** আজকের দর, গতকালের দর, গত সপ্তাহের দর এবং গত মাসের দরের তুলনা।
    - **বাজারভিত্তিক আজকের দাম:** কারওয়ান বাজার, মিরপুর, চট্টগ্রাম, রাজশাহী ইত্যাদি বাজারের বিভাগ ও রেঞ্জ তালিকা।
 
 5. **🔐 নিরাপদ অথেনটিকেশন ও প্রোফাইল আপডেট (Auth & Profile Update - Challenge C3):**
@@ -64,7 +65,7 @@
 
 ১. **রিপোজিটরি ক্লোন করুন:**
 ```bash
-git clone https://github.com/your-username/B14-A7-Bazar-Dor.git
+git clone https://github.com/razzak-dev007/B14-A7-Bazar-Dor.git
 cd B14-A7-Bazar-Dor
 ```
 
@@ -98,11 +99,12 @@ git commit -m "feat: complete bazar dor assignment"
 git push origin main
 ```
 ২. [Vercel](https://vercel.com) ড্যাশবোর্ডে গিয়ে `Add New Project` সিলেক্ট করুন।
-৩. গিটহাব রিপোজিটরিটি ইমপোর্ট করুন এবং Environment Variables-এ `BETTER_AUTH_SECRET` ও `BETTER_AUTH_URL` যুক্ত করে **Deploy** বাটনে ক্লিক করুন।
+৩. গিটহাব রিপোজিটরিটি (`razzak-dev007/B14-A7-Bazar-Dor`) ইমপোর্ট করুন এবং Environment Variables-এ `BETTER_AUTH_SECRET` ও `BETTER_AUTH_URL` যুক্ত করে **Deploy** বাটনে ক্লিক করুন।
 ৪. ডিপ্লয় শেষ হলে ডাইনামিক রুটগুলো যেমন `/category/chal`, `/product/1` ইত্যাদি ব্রাউজারে রিফ্রেশ করে চেক করুন।
 
 ---
 
 ## 👨‍💻 বিকাশকারী (Author)
-- **শিক্ষার্থী:** ব্যাচ ১৪ (Programming Hero)
-- **প্রজেক্ট:** বাজার দর (Bazar Dor) — অ্যাসাইনমেন্ট ০৭
+- **বিকাশকারী:** [Md Abdur Razzak](https://github.com/razzak-dev007)
+- **প্রজেক্ট:** বাজার দর (Bazar Dor) — অ্যাসাইনমেন্ট ০৭ (Programming Hero Batch 14)
+
