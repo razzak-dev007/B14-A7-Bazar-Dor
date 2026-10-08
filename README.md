@@ -6,7 +6,7 @@
 ---
 
 ## 🌟 লাইভ ডেমো ও লিংক (Live Links)
-- **Live Deployment:** [https://bazardor.vercel.app](https://bazardor.vercel.app) *(Deploy on Vercel)*
+- **Live Deployment:** [https://b14-a7-bazar-dor.vercel.app](https://b14-a7-bazar-dor.vercel.app)
 - **GitHub Repository:** [https://github.com/razzak-dev007/B14-A7-Bazar-Dor](https://github.com/razzak-dev007/B14-A7-Bazar-Dor)
 
 ---
