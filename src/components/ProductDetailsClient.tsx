@@ -264,6 +264,43 @@ export default function ProductDetailsClient({
         </div>
       </section>
 
+      {/* Historical Price Trend */}
+      {(product.yesterday || product.lastWeek || product.lastMonth) && (
+        <section className="space-y-4">
+          <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+            <TrendingUp className="w-5 h-5 text-emerald-600" />
+            <span>মূল্য পরিবর্তনের ইতিহাস</span>
+          </h2>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+            <div className="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-2xs text-center">
+              <span className="text-xs font-semibold text-slate-400 block mb-1">আজকের দর</span>
+              <span className="text-lg sm:text-xl font-extrabold text-emerald-800">
+                {toBengaliDigits(product.today)} টাকা
+              </span>
+            </div>
+            <div className="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-2xs text-center">
+              <span className="text-xs font-semibold text-slate-400 block mb-1">গতকালের দর</span>
+              <span className="text-lg sm:text-xl font-bold text-slate-700">
+                {toBengaliDigits(product.yesterday || product.today)} টাকা
+              </span>
+            </div>
+            <div className="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-2xs text-center">
+              <span className="text-xs font-semibold text-slate-400 block mb-1">গত সপ্তাহের দর</span>
+              <span className="text-lg sm:text-xl font-bold text-slate-700">
+                {toBengaliDigits(product.lastWeek || product.today)} টাকা
+              </span>
+            </div>
+            <div className="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-2xs text-center">
+              <span className="text-xs font-semibold text-slate-400 block mb-1">গত মাসের দর</span>
+              <span className="text-lg sm:text-xl font-bold text-slate-700">
+                {toBengaliDigits(product.lastMonth || product.today)} টাকা
+              </span>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Market-wise Price Section */}
       <section className="space-y-4">
         <div className="flex items-center justify-between">
